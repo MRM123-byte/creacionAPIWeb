@@ -1,0 +1,65 @@
+body {
+  background-color: #f1f4f9;
+}
+
+.card-header {
+  background-color: #fff;
+}
+
+/* Área de contenido con altura uniforme en las cuatro tarjetas */
+.content-area {
+  min-height: 300px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.status-message {
+  color: #6c757d;
+  margin: 0;
+}
+
+.error-message {
+  color: #b02a37;
+}
+
+/* Imágenes del mismo tamaño, recortadas sin deformarse */
+.content-area img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  background-color: #dee2e6;
+}
+
+.quote-text {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.quote-author {
+  font-weight: 600;
+  color: #495057;
+  margin: 0;
+}
+
+.fact-text {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .content-area,
+  .content-area img {
+    min-height: 240px;
+    height: auto;
+  }
+
+  .content-area img {
+    height: 240px;
+  }
+}
